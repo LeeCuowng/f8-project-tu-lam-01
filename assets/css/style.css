@@ -12,6 +12,82 @@ body {
 }
 
 /* Common */
+:root {
+    --primary-color: #1ebfc1;
+}
+
 a {
     text-decoration: none;
+}
+
+.content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* ===== Header ===== */
+.header {
+    background: #ffffff;
+    padding-top: 52px;
+    position: sticky;
+    top: -52px;
+    z-index: 1;
+}
+
+.nav-bar {
+    padding: 12px 0;
+}
+
+/* Navigation */
+.nav-bar ul {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0 40px;
+}
+
+.nav-bar ul a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #2f3a3b;
+}
+
+.nav-bar ul .active {
+    font-weight: 600;
+}
+
+.nav-bar ul a:hover {
+    text-shadow: 1px 0 0;
+    color: #2f3a3b;
+}
+
+/* Action */
+.nav-bar .sign-in {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #494949;
+}
+
+.nav-bar .sign-in:hover {
+    color: var(--primary-color);
+}
+
+.nav-bar .sign-up {
+    margin-left: 24px;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.nav-bar .sign-up:hover {
+    background: var(--primary-color);
+    color: #ffffff;
 }
